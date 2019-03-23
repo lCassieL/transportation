@@ -1,0 +1,545 @@
+/* сброс стилей браузера */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1.2;
+}
+ol { 
+  padding-left: 1.4em;
+  list-style: decimal;
+}
+ul {
+  padding-left: 1.4em;
+  list-style: square;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+} 
+/* конец кода сброса стилей браузера */
+
+
+/*подключение шрифта ptsans*/
+@font-face {
+  font-family: 'PTSans';
+  src: url('fonts/PTSansRegular.woff2') format('woff2'),
+                    url('fonts/PTSansRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PTSans';
+  src: url('fonts/PTSansItalic.woff2') format('woff2'),
+        url('fonts/PTSansItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'PTSans';
+  src: url('fonts/PTSansBold.woff2') format('woff2'),
+        url('fonts/PTSansBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PTSans';
+  src: url('fonts/PTSansBoldItalic.woff2') format('woff2'),
+        url('fonts/PTSansBoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+/*конец подключения шрифта ptsans*/ 
+
+
+html {
+    font-family: PTSans, Arial, sans-serif;
+    background: url(../img/background-10.jpg);
+    font-size: 1.1em;
+    color: dimgray;
+}
+body {
+    width: 70%;
+    margin: 20px auto;
+}
+.fullcontent {
+   background: white;
+}
+
+/*стили банера сайта*/
+.banner {
+   text-align: left;
+   position:relative;
+ }
+.banner img {
+   width: 100%;
+ }
+          
+.banner .logo h1 {
+  position:absolute;
+  left: 1%;
+  top:  0%;
+  color: rgba(255,255,255,0.8);
+  font-family: 'Kurale', 'Arial Black', serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 5em;
+}
+.banner .contact_logo ul {
+  list-style: none;
+  position: absolute;
+  left:70%;
+  top:5%;
+  color: rgba(255,255,255,0.8);
+  font-family: 'Kurale', 'Arial Black', serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 1.5em;
+}
+.banner .contact_logo li {
+  line-height: 2em; 
+}
+/*конец стилей баннера сайта*/
+
+
+/*стили панели навигации*/
+nav {
+  background: dimgray;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  border-radius: 20px 20px 0 0;
+  box-shadow: inset 0px 1px 0px rgba(255,255,255,0.7);
+  padding-right: 25px;
+}            
+nav li {
+  display: inline;
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #ffffff;
+  padding: 10px 20px;
+  background: skyblue;
+  border-radius: 5px;
+  border: 1px solid dimgray;
+  box-shadow: inset 0px 1px 0px rgba(255,255,255,0.7);
+  text-shadow:
+    0px -1px 1px rgba(000,000,000,0.2),
+    0px 1px 0px rgba(255,255,255,0.3);
+}
+nav a {
+  -webkit-transition: -webkit-transform .3s,
+                      background-color .3s ease-in .1s;
+  transition: transform .3s,
+              background-color .3s ease-in .1s;
+}
+nav a:hover {
+  background-color: #ff932d;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+/*конец стилей панели навигации*/
+
+p {
+  margin-left: 20px;
+}
+            
+.content h1 {
+    font-family: 'Kurale', 'Arial Black', serif;
+    font-weight: normal;
+    text-align: left;
+    margin: 20px;
+    font-size: 2.5em;
+    color: darkorange;
+}
+.content h2 {
+    font-family: 'Kurale', 'Arial Black', serif;
+    font-weight: normal;
+    text-align: left;
+    margin: 20px;
+    font-size: 1.5em;
+    color: darkslategray;
+}
+
+.about span {
+  font-style: italic;
+}
+
+.price ul, .about ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.price li, .about li {
+  padding-bottom: 5px;
+}
+.another_color {
+    background: gainsboro;
+    padding-bottom: 20px;
+}
+
+
+/*стили блока автопарка*/
+.gallery figure {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 50px 50px 50px;
+}
+.gallery figcaption {
+  text-align: center;
+  margin: 10px 0 0 0;
+}
+.gallery table {
+  font-size: 14px;
+  border-collapse: collapse;
+  text-align: left;
+  font-style: italic;
+}
+.gallery td {
+  border-bottom: 1px dotted black;
+  color: black;
+  padding: 2px 10px;
+  transition: .3s linear;
+}
+.gallery tr:hover td {
+  color: darkorange;
+}
+/*конец стилей блока автопарка*/
+
+
+
+/*стили блока контактов*/
+.contacts {
+  font-weight: bold;
+  color: darkgray;
+  background: dimgray;
+  padding-bottom: 20px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: inset 0px -1px 0px rgba(255,255,255,0.7);
+}
+.contacts h1 {
+    font-family: 'Kurale', 'Arial Black', serif;
+    font-weight: normal;
+    text-align: left;
+    font-size: 2.5em;
+    color: darkorange;
+    padding: 20px;
+}
+
+.contacts ul {
+  list-style: none;
+  vertical-align: text-bottom;
+  font-style: italic;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.contacts li {
+  padding-right: 20px;
+}
+.contacts a {
+  text-decoration: none;
+  color: skyblue;
+}
+.contacts a:hover {
+  color: #ff932d;
+}
+/*конец стилей блока контактов*/
+
+/*стили кнопки прокрутки вверх*/
+.scrollup{
+width:40px;
+height:40px;
+opacity:0.3;
+position:fixed;
+bottom:50px;
+right:100px;
+display:none;
+text-indent:-9999px;
+background: url('../img/icon_top.png') no-repeat;
+}
+/*конец стилей кнопки прокрутки вверх*/
+
+
+@media (min-width: 1350px) and (max-width: 1630px) {
+
+  .banner .logo h1 {
+  font-size: 4.3em;
+}
+.banner .contact_logo ul {
+  left:70%;
+  top:11%;
+  font-size: 1.3em;
+}
+.banner .contact_logo li {
+  line-height: 1.7em; 
+}
+
+}
+
+
+@media (min-width: 1020px) and (max-width: 1349px) {
+
+  body {
+    width: 90%;
+  }
+
+  .banner .logo h1 {
+  font-size: 4.5em;
+}
+.banner .contact_logo ul {
+  left:69%;
+  top:11%;
+  font-size: 1.3em;
+}
+.banner .contact_logo li {
+  line-height: 1.7em; 
+}
+
+}
+
+
+@media (min-width: 800px) and (max-width: 1019px) {
+
+  body {
+    width: 90%;
+  }
+
+  .banner .logo h1 {
+  font-size: 3.4em;
+}
+.banner .contact_logo ul {
+  left:69%;
+  top:11%;
+  font-size: 1.1em;
+}
+.banner .contact_logo li {
+  line-height: 1.5em; 
+}
+
+
+nav a {
+  padding: 7px 14px;
+}
+
+.content h1 {
+    font-size: 2em;
+}
+.contacts h1 {
+    font-size: 2em;
+}
+
+
+}
+
+
+
+@media (min-width: 600px) and (max-width: 799px) {
+
+  body {
+    width: 95%;
+  }
+
+  .banner .logo h1 {
+  font-size: 2.8em;
+}
+.banner .contact_logo ul {
+  left:68%;
+  top:15%;
+  font-size: 0.9em;
+}
+.banner .contact_logo li {
+  line-height: 1.3em; 
+}
+
+
+nav a {
+  padding: 5px 10px;
+  font-size: 1.1em;
+}
+
+.content h1 {
+    font-size: 1.8em;
+}
+.contacts h1 {
+    font-size: 1.8em;
+}
+
+}
+
+
+@media (min-width: 470px) and (max-width: 599px) {
+
+  body {
+    width: 99%;
+  }
+
+  .banner .logo h1 {
+  font-size: 2.2em;
+}
+.banner .contact_logo ul {
+  left:69%;
+  top:20%;
+  font-size: 0.7em;
+}
+.banner .contact_logo li {
+  line-height: 1.1em; 
+}
+
+nav a {
+  padding: 5px 10px;
+  font-size: 1.1em;
+}
+
+.content h1 {
+    font-size: 1.5em;
+    text-align: center;
+}
+.content p {
+  text-align: center;
+}
+.about h2 {
+  text-align: center;
+}
+.contacts h1 {
+    font-size: 1.5em;
+    text-align: center;
+}
+.contacts  {
+  text-align: center;
+}
+
+.scrollup{
+bottom:30px;
+right:0px;
+}
+
+}
+
+
+@media (min-width: 375px) and (max-width: 469px) {
+
+  body {
+    width: 99%;
+  }
+
+  .banner .logo h1 {
+  font-size: 1.6em;
+}
+.banner .contact_logo ul {
+  display:none;
+}
+.banner .contact_logo li {
+  display:none;
+}
+
+
+nav a {
+  padding: 4px 8px;
+  font-size: 0.9em;
+}
+
+.content h1 {
+    font-size: 1.5em;
+    text-align: center;
+}
+.content p {
+  text-align: center;
+}
+.about h2 {
+  text-align: center;
+}
+.contacts h1 {
+    font-size: 1.5em;
+    text-align: center;
+}
+.contacts  {
+  text-align: center;
+}
+html {
+  font-size: 1em;
+}
+
+.gallery img {
+  width: 250px;
+  height: 175px;
+}
+
+.scrollup{
+bottom:30px;
+right:0px;
+}
+
+}
+
+
+
+@media (max-width: 374px) {
+
+  body {
+    width: 99%;
+  }
+
+  .banner .logo h1 {
+  font-size: 1.6em;
+}
+.banner .contact_logo ul {
+  display:none;
+}
+.banner .contact_logo li {
+  display:none;
+}
+
+  nav a {
+  padding: 2px 4px;
+  font-size: 0.7em;
+}
+
+.content h1 {
+    font-size: 1.5em;
+    text-align: center;  
+}
+.content p {
+  text-align: center;
+}
+.about h2 {
+  text-align: center;
+}
+.contacts h1 {
+    font-size: 1.5em;
+    text-align: center;
+}
+.contacts, {
+  text-align: center;
+}
+html {
+  font-size: 1em;
+}
+
+.gallery img {
+  width: 200px;
+  height: 140px;
+}
+
+.scrollup{
+bottom:30px;
+right:0px;
+}
+
+}
+
+
+
